@@ -1,0 +1,131 @@
+:root {
+  --bg: #ffffff;
+  --accent: #123456;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: #222;
+  transition: 0.4s;
+}
+
+/* TOP BAR */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+}
+
+.topbar a {
+  color: white;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topbar a:hover {
+  color: #00d4ff;
+}
+
+.theme-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* NAV */
+nav {
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #00d4ff;
+}
+
+/* BACKGROUND IMAGES */
+.home { background: url("../images/westbrook.jpg") center/cover fixed; }
+.about { background: url("../images/flowers.jpg") center/cover fixed; }
+.portfolio { background: url("../images/westbrook1.jpg") center/cover fixed; }
+.contact { background: url("../images/sunset.jpg") center/cover fixed; }
+
+/* MAIN BOX */
+main {
+  width: 60%;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.88);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ABOUT IMAGE */
+.about-img {
+  float: right;
+  width: 180px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+/* PORTFOLIO */
+.port img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
